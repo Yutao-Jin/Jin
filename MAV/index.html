@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="SemiColonWeb" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Poppins:300,400,500,600,700|PT+Serif:400,400i&display=swap" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+	<link rel="stylesheet" href="css/components/radio-checkbox.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/custom.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.2/alpine.js"></script>
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.2/tailwind.min.css">
+	<style>
+		.previousnext {
+	position:relative;
+	top:900px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px; 
+}
+#previousnext{
+	top:100px;
+}
+	</style>
+
+	<!-- Document Title
+	============================================= -->
+	<title>MAV</title>
+
+</head>
+
+<body class="stretched">
+
+<div>
+<center>
+
+	<img src="./MAV/slice1.jpg" style="width:100%;position:relative;top:-6vh;">
+	<img src="./MAV/slice2.jpg" style="width:100%;position:relative;top:-6vh;">
+	<img src="./MAV/slice3.jpg" style="width:100%;position:relative;top:2vh;">
+	<img src="./MAV/slice4.jpg" style="width:100%;position:relative;top:18vh;">
+	<div style="width:77.6%;position:relative;top:22vh;">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/rZfIQ74bInI?start=6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+	<img src="./MAV/slice5.jpg" style="width:100%;position:relative;top:38vh;">
+
+	<img src="./MAV/slice6.jpg" style="width:100%;position:relative;top:18vh;">
+	<img src="./MAV/slice7.jpg" style="width:100%;position:relative;top:18vh;">
+	<div style="width:77.6%;position:relative;top:24vh;">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/DzEFrvyXYD8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	</div>
+	<img src="./MAV/slice9.jpg" style="width:100%;position:relative;top:40vh;">
+	<img src="./MAV/slice9-2.jpg" style="width:100%;position:relative;top:38vh;">
+	<img src="./MAV/slice10.jpg" style="width:100%;position:relative;top:48vh;">
+	<img src="./MAV/slice11.jpg" style="width:100%;position:relative;top:68vh;">
+	<img src="./MAV/slice12.jpg" style="width:100%;position:relative;top:82vh;">
+	<img src="./MAV/slice13.jpg" style="width:100%;position:relative;top:100vh;">
+
+
+
+
+	<div id="previousnext">
+		<a href="../Cocube/index.html">
+		<img class="previousnext" border="0" alt="Mail" src="./MAV/previous.jpg"/></a>
+		<a href="../Woodpacker/index.html">
+		<img class="previousnext" border="0" alt="Facebook" src="./MAV/next.jpg"/></a>
+	</div>
+	<div style="position:relative;top:120vh;height:100px;">
+
+	</div>
+</center>
+
+
+
+
+
+
+
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.min.js"></script>
+
+
+	<script src="js/functions.js"></script>
+	<script src="js/jquery.hotspot.js"></script>
+	<script src="js/functions.js"></script>
+
+	<script>
+		jQuery(window).on( 'load', function() {
+			jQuery('.block-hero-11 #hotspot-img-onhover').hotSpot();
+		});
+		jQuery(window).on( 'load', function() {
+			jQuery('.block-hero-12 #hotspot-img-onhover').hotSpot();
+		});
+
+		jQuery(window).on( 'pluginSwiperReady', function(){
+			var sliderTop = new Swiper('.slider-top', {
+				spaceBetween: 10,
+				slidesPerView: 'auto',
+				centeredSlides: true,
+				navigation: {
+					nextEl: '.slider-arrow-right',
+					prevEl: '.slider-arrow-left',
+				},
+				loop: true,
+				loopedSlides: 4
+			});
+			var sliderThumbs = new Swiper('.slider-thumbs', {
+				spaceBetween: 10,
+				centeredSlides: true,
+				slidesPerView: 'auto',
+				touchRatio: 0.2,
+				slideToClickedSlide: true,
+					loop: true,
+					loopedSlides: 4
+			});
+
+			sliderTop.controller.control = sliderThumbs;
+			sliderThumbs.controller.control = sliderTop;
+		});
+	</script>
+
+</body>
+</html>
