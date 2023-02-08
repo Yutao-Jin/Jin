@@ -27,7 +27,7 @@
 	<style>
 		.previousnext {
 	position:relative;
-	top:900px;
+	top:940px;
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
@@ -35,6 +35,47 @@
 }
 #previousnext{
 	top:100px;
+}
+
+/* bar */
+#navbar {
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+#navbar a:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}
+
+#navbar a.active {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
 }
 	</style>
 
@@ -48,8 +89,14 @@
 
 <div>
 <center>
-
-	<img src="./MAV/slice1.jpg" style="width:100%;position:relative;top:-6vh;">
+<!-- bar -->
+<div id="navbar" style="z-index: 1;">
+  <a class="active" style="position:relative; left:9.7vw;" href="../index.html">Home</a >
+  <a class="active" style="position:relative; left:82vw;" href="https://www.youtube.com/@dumbtech6267/videos" target="_blank">About</a >
+  <!-- <a href="javascript:void(0)">News</a >
+  <a href="javascript:void(0)">Contact</a > -->
+</div>
+	<img src="./MAV/slice1.jpg" style="width:100%;position:relative;top:-8vh;">
 	<img src="./MAV/slice2.jpg" style="width:100%;position:relative;top:-6vh;">
 	<img src="./MAV/slice3.jpg" style="width:100%;position:relative;top:2vh;">
 	<img src="./MAV/slice4.jpg" style="width:100%;position:relative;top:18vh;">
@@ -79,7 +126,7 @@
 		<a href="../Woodpacker/index.html">
 		<img class="previousnext" border="0" alt="Facebook" src="./MAV/next.jpg"/></a>
 	</div>
-	<div style="position:relative;top:120vh;height:100px;">
+	<div style="position:relative;top:110vh;height:100px;">
 
 	</div>
 </center>
@@ -133,6 +180,22 @@
 			sliderTop.controller.control = sliderThumbs;
 			sliderThumbs.controller.control = sliderTop;
 		});
+
+
+
+  window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
 	</script>
 
 </body>
