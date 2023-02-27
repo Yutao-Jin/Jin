@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="SemiColonWeb" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Poppins:300,400,500,600,700|PT+Serif:400,400i&display=swap" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+	<link rel="stylesheet" href="css/components/radio-checkbox.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/custom.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.2/alpine.js"></script>
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.2/tailwind.min.css">
+
+	<!-- Document Title
+	============================================= -->
+	<title>Visual</title>
+	<style>
+		.previousnext {
+	position:relative;
+	top:80px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px; 
+}
+#previousnext{
+	top:100px;
+}
+/* bar */
+#navbar {
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+#navbar a:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}
+
+#navbar a.active {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+
+/* new */
+* {
+
+margin: 0px;
+
+padding: 0px;
+
+box-sizing: border-box;
+
+}
+
+.body-text {
+
+display: flex;
+
+font-family: 'Helvetica', 'Arial', sans-serif;
+
+align-items: center;
+
+justify-content: center;
+
+margin-top: 250px;
+
+}
+
+nav {
+
+display: flex;
+
+justify-content: space-around;
+
+align-items: center;
+
+min-height: 8vh;
+
+background-color: rgb(255, 255, 255);
+
+font-family: 'Helvetica', 'Arial', sans-serif;
+
+}
+
+.heading {
+
+color: white;
+
+text-transform: uppercase;
+
+letter-spacing: 5px;
+
+font-size: 20px;
+
+}
+
+.nav-links {
+
+display: flex;
+
+justify-content: space-around;
+
+width: 30%;
+
+}
+
+.nav-links li {
+
+list-style: none;
+
+}
+
+.nav-links a {
+
+color: rgb(0, 0, 0);
+
+text-decoration: none;
+
+letter-spacing: 3px;
+
+font-weight: regular;
+
+font-size: 16px;
+
+padding: 14px 16px;
+
+}
+
+.nav-links a:hover:not(.active) {
+
+background-color: white;
+
+}
+
+.nav-links li a.active {
+color:white;
+background-color: #000000;
+
+}
+	</style>
+
+</head>
+
+<body class="stretched">
+
+	<nav>
+
+		<div class="heading">
+	
+		  <h4></h4>
+	
+		</div>
+	
+		<ul class="nav-links" style="position:relative;left:9vw;">
+	
+		  <li><a href="../index.html">Engineering</a></li>
+		  <li><a class="active" href="services.html">Visual Design</a></li>
+	
+		  <li><a href="https://www.youtube.com/@dumbtech6267/videos" target="_blank">About</a></li>
+	
+		</ul>
+	
+	  </nav>
+
+<center>
+	<img src="./image/slice2.jpg" style="width:100%;position:relative;top:10vh;">
+	<img src="./image/slice3.jpg" style="width:100%;position:relative;top:20vh;">
+	<img src="./image/slice6.jpg" style="width:100%;position:relative;top:30vh;">
+	<img src="./image/slice4.jpg" style="width:100%;position:relative;top:30vh;">
+	<img src="./image/slice5.jpg" style="width:100%;position:relative;top:30vh;">
+
+</center>
+
+
+
+
+
+
+
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.min.js"></script>
+
+
+	<script src="js/functions.js"></script>
+	<script src="js/jquery.hotspot.js"></script>
+	<script src="js/functions.js"></script>
+
+	<script>
+		jQuery(window).on( 'load', function() {
+			jQuery('.block-hero-11 #hotspot-img-onhover').hotSpot();
+		});
+		jQuery(window).on( 'load', function() {
+			jQuery('.block-hero-12 #hotspot-img-onhover').hotSpot();
+		});
+
+		jQuery(window).on( 'pluginSwiperReady', function(){
+			var sliderTop = new Swiper('.slider-top', {
+				spaceBetween: 10,
+				slidesPerView: 'auto',
+				centeredSlides: true,
+				navigation: {
+					nextEl: '.slider-arrow-right',
+					prevEl: '.slider-arrow-left',
+				},
+				loop: true,
+				loopedSlides: 4
+			});
+			var sliderThumbs = new Swiper('.slider-thumbs', {
+				spaceBetween: 10,
+				centeredSlides: true,
+				slidesPerView: 'auto',
+				touchRatio: 0.2,
+				slideToClickedSlide: true,
+					loop: true,
+					loopedSlides: 4
+			});
+
+			sliderTop.controller.control = sliderThumbs;
+			sliderThumbs.controller.control = sliderTop;
+		});
+
+		
+  window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+	</script>
+
+</body>
+</html>

@@ -81,14 +81,139 @@
 
 }
 
+
+
+/* new */
+* {
+
+margin: 0px;
+
+padding: 0px;
+
+box-sizing: border-box;
+
+}
+
+.body-text {
+
+display: flex;
+
+font-family: 'Helvetica', 'Arial', sans-serif;
+
+align-items: center;
+
+justify-content: center;
+
+margin-top: 250px;
+
+}
+
+nav {
+
+display: flex;
+
+justify-content: space-around;
+
+align-items: center;
+
+min-height: 8vh;
+
+background-color: rgb(255, 255, 255);
+
+font-family: 'Helvetica', 'Arial', sans-serif;
+
+}
+
+.heading {
+
+color: white;
+
+text-transform: uppercase;
+
+letter-spacing: 5px;
+
+font-size: 20px;
+
+}
+
+.nav-links {
+
+display: flex;
+
+justify-content: space-around;
+
+width: 30%;
+
+}
+
+.nav-links li {
+
+list-style: none;
+
+}
+
+.nav-links a {
+
+color: rgb(0, 0, 0);
+
+text-decoration: none;
+
+letter-spacing: 3px;
+
+font-weight: regular;
+
+font-size: 16px;
+
+padding: 14px 16px;
+
+}
+
+.nav-links a:hover:not(.active) {
+
+background-color: white;
+
+}
+
+.nav-links li a.active {
+color:white;
+background-color: #000000;
+
+}
+
+
+
 </style>
 </head>
 <body>
 
+
+  <nav>
+
+    <div class="heading">
+
+      <h4></h4>
+
+    </div>
+
+    <ul class="nav-links" style="position:relative;left:9vw;">
+
+      <li><a class="active" href="../Jin/index.html">Engineering</a></li>
+      <li><a href="./Visual/index.html">Visual Design</a></li>
+
+      <li><a href="https://www.youtube.com/@dumbtech6267/videos" target="_blank">About</a></li>
+
+    </ul>
+
+  </nav>
+
+
+
+
+
 <center>
   <img src="./image/title.jpg" style="width:98%;position:relative;top:4vh;">
-</center>
-<div style="padding: 6vh 1vw 5vh 1vw; text-align: center;">
+
+<div style="padding: 6vh 2vw 5vh 2vw; text-align: center;">
   <p style="font-size: 20px; font-weight: lighter;">
             &#160 | &#160<a href="./MAV/index.html" id="link">CAD Design</a > 
              | &#160<a href="./printedplane/index.html" id="link">Rapid Prototyping</a > 
@@ -97,11 +222,12 @@
              | &#160<a href="./Cocube/index.html" id="link">Embedded System Development</a > 
               | &#160<a href="./MAV/index.html" id="link">UAV Design</a > 
               | &#160<a href="./VR-Chicken/index.html" id="link">UI UX Design</a > 
-                | &#160<a href="." id="link">Visual</a > 
+                | &#160<a href="./Visual/index.html" id="link">Visual</a > 
              &#160 | &#160
 
 </p >
 </div>
+</center>
       <div style="position:relative; top:0vh; width:90vw;">
   <div id="section1" style="height: 50vh;padding: 0vh 4.5vw 2vh 4.5vw; display: flex;flex-wrap: none;">
            <a href="/MAV/index.html">
